@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<h1>Na aula 1 aprendemos a utilizar linhas de código para dizer ao programa como desenhar na tela.</h1>
+<h3>Chamamos instruções que as bibliotecas (APIs) deixam disponíveis para usarmos em nossos programas, como no exemplo abaixo.</h3>
+Para acessar a aula 1, clique <a href="https://cursos.alura.com.br/course/logica-programacao-pratica-com-desenho-animacoes-em-jogo/task/21876">aqui</a><br><br><hr><br><br>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d'); 
+
+	pincel.fillStyle = 'lightgrey';
+	pincel.fillRect(0, 0, 600, 400); 
+
+	pincel.fillStyle = 'blue';
+	pincel.beginPath(); 
+	pincel.moveTo(300, 50); 
+	pincel.lineTo(50, 200);
+	pincel.lineTo(550, 200);
+	pincel.fill();
+
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath();
+	pincel.arc(300, 250, 100, 0, 2*3.14);
+	pincel.fill(); 
+
+</script>
